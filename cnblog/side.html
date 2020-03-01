@@ -1,10 +1,10 @@
 ﻿<!-- menu html -->
 <div class="container">
-    <div class="menu-wrap optiscroll" id="menuWrap" style="display:none">
-        <nav class="menu">
+    <div class="menu-wrap optiscroll" id="menuWrap" style="display:none" style="border:2px solid;border-radius:25px;">
+        <nav class="menu" >
 
             <!-- 个人简介 -->
-            <div class="introduce-box">
+            <div class="introduce-box" >
                 <div class="introduce-head">
                     <div class="introduce-via" id="menuBlogAvatar"></div>
                 </div>
@@ -12,8 +12,8 @@
             </div>
 
             <!-- 导航 -->
-            <div class="nav-title"></div>
-            <div class="icon-list">
+            <div class="nav-title" ></div>
+            <div class="icon-list" style="border:2px solid;border-radius:25px;margin-top:20px">
                 <ul>
                     <li><a href="https://www.cnblogs.com/hichens/" target="_self">首页</a></li>
                     <li><a href="https://msg.cnblogs.com/send/hichens" target="_blank">联系</a></li>
@@ -26,13 +26,14 @@
             </div>
            <!-- 访客来源统计 -->
             <div class="m-list-title" style="display: block;"><span>访客来源</span></div>
+            <div  style="border:2px solid;border-radius:25px; padding: 10px 10px 10px 20px">
             <a href='https://clustrmaps.com/site/1ahcn' title='Visit tracker'>
-                <img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=268&t=t&d=ymyD9S6Gxrh7BknYYgxQi8uzm-aKKsJUuRZX0vBVlZQ&co=000000' />
+                <img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=268&t=t&d=ymyD9S6Gxrh7BknYYgxQi8uzm-aKKsJUuRZX0vBVlZQ&co=000000' height="80%" width="80%"/>
             </a>
-
+            </div>
             <!-- 最新随笔 -->
             <div class="m-list-title"><span>最新随笔</span></div>
-            <div class="m-icon-list" id="sb-sidebarRecentposts"></div>
+            <div class="m-icon-list" id="sb-sidebarRecentposts"  style="border:2px solid;border-radius:25px; padding: 10px 10px 10px 20px"></div>
 
             <!-- 我的标签 -->
             <div class="m-list-title"><span>我的标签</span></div>
@@ -40,32 +41,33 @@
 
             <!-- 随笔分类 -->
             <div class="m-list-title"><span>随笔分类</span></div>
-            <div class="m-icon-list" id="sb-classify"></div>
+            <div class="m-icon-list" id="sb-classify" style="border:2px solid;border-radius:25px; padding: 10px 10px 10px 20px"></div>
 
             <!-- 随笔档案 -->
             <div class="m-list-title"><span>随笔档案</span></div>
-            <div class="m-icon-list" id="sb-record"></div>
+            <div class="m-icon-list" id="sb-record" style="border:2px solid;border-radius:25px; padding: 10px 10px 10px 20px"></div>
 
             <!-- 阅读排行 -->
             <div class="m-list-title"><span>阅读排行</span></div>
-            <div class="m-icon-list" id="sb-topview"></div>
+            <div class="m-icon-list" id="sb-topview" style="border:2px solid;border-radius:25px; padding: 10px 10px 10px 20px"></div>
 
             <!-- 推荐排行 -->
             <div class="m-list-title"><span>推荐排行</span></div>
-            <div class="m-icon-list" id="sb-topDiggPosts"></div>
+            <div class="m-icon-list" id="sb-topDiggPosts"  style="border:2px solid;border-radius:25px; padding: 10px 10px 10px 20px"></div>
 
             <!-- 自定义列表 -->
-            <span id="menuCustomList"></span>
+            
+
         </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
+        <button class="close-button" id="close-button" >Close Menu</button>
         <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
                 <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
             </svg>
         </div>
     </div>
-    <button class="menu-button" id="open-button">MENU</button>
-    <div class="content-wrap" id="content-wrap"></div><!-- /content-wrap -->
+    <button class="menu-button" id="open-button"  style="border:2px solid;border-radius:25px;">MENU</button>
+    <div class="content-wrap" id="content-wrap" ></div><!-- /content-wrap -->
 </div>
 <!-- menu html end -->
 
@@ -106,20 +108,14 @@
 
         // ---- 菜单配置 ----
         menuCustomList: { // 自定义菜单数据，显示在正常数据下方
-            "title": { // 标题
+            "主页": { // 标题
                 "data": [ // 列表数据 ['列表', '链接']
                     ['我的博客', 'https://www.cnblogs.com/hichens'],
                     
                 ],
                 "icon": "icon-brush_fill" // 配置图标，参考文档：本博客字体图标库及其更换方法
             },
-            "title": { // 标题
-                "data": [ // 列表数据 ['列表', '链接']
-                    ['我的博客', 'https://www.cnblogs.com/hichens'],
-                   
-                ],
-                "icon": "icon-brush_fill" // 配置图标，参考文档：本博客字体图标库及其更换方法
-            },
+           
         },
 
 
@@ -300,7 +296,7 @@
         ],
 
          bottomText: {  // 页脚标语
-            icon: "┗( ▔, ▔ )┛",
+            icon: "୧(﹒︠ᴗ﹒︡)୨",
             left: " 独学而无友",
             right: "则孤陋寡闻"
         },
