@@ -1,0 +1,39 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont]
+"936"="YaHei Consolas Hybrid"@echo off
+
+call "C:\home\hichens\clink\0.4.9\clink" inject --profile "~\clink
+
+prompt [Hichens]$$$S
+
+cd C:\home
+doskey /macrofile=c:\local\bin\_doskey
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
+"AutoRun"="C:\\local\\bin\\_autorun.cmd"pwd=cd $*
+
+cd=pushd $*
+
+cd~=cd C:\home\hichens
+ $*
+ll=dir /a$*
+
+ls=dir /b $*
+rmdir=rd $*
+
+rm=del $*
+clear=cls
+ $*
+cat=type $*
+mv=move $*
+cp=copy $*
+touch = type nul > $*
+mkdir = md $*
+reboot = shutdown -r -t  0$*
+open  = start = $*
+jn = jupyter notebook $*
+gedit = notepad $*
