@@ -21,3 +21,4 @@ reboot = shutdown -r -t  0$*
 open  = start = $*
 jn = jupyter notebook $*
 gedit = notepad $*
+gitfast = call "C:\local\bin\bat\gitfast.bat"
