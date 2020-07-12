@@ -1,0 +1,23 @@
+pwd=cd $*
+
+cd=pushd $*
+
+cd~=cd C:\home\hichens
+ $*
+ll=dir /a$*
+
+ls=dir /b $*
+rmdir=rd $*
+
+rm=del $*
+clear=cls
+ $*
+cat=type $*
+mv=move $*
+cp=copy $*
+touch = type nul > $*
+mkdir = md $*
+reboot = shutdown -r -t  0$*
+open  = start = $*
+jn = jupyter notebook $*
+gedit = notepad $*
